@@ -1,0 +1,13 @@
+[TP]
+
+Créer une application reconnaissant une forme géométrique spécifier via une interface
+
+Nous nous intéressons qu'aux triangles, quadrilatères et pentagones
+
+Entrées
+ - nb coté [2 ; 5]
+ - nb nombre angles droits
+ - nb côtés identiques
+ - nb côtés parallèles
+
+Langage non imposé
