@@ -11,3 +11,14 @@ Entrées
  - nb côtés parallèles
 
 Langage non imposé
+
+### Contenu d’un système expert
+
+Un système expert est constitué de différentes parties liées
+entre elles :
+
+- Une base de règles qui représente les connaissances de l’expert.
+- Une base de faits qui représente les connaissances actuelles du système sur un cas précis.
+- Un moteur d’inférences pour appliquer les règles.
+- Une interface avec l’utilisateur.
+
