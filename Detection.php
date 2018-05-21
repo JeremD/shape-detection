@@ -26,6 +26,9 @@ class Detection {
         "err"   => "Ceci est une forme incohérente"
 ];
 
+//Changer directions (dessin graph)
+
+
     /**
      * Detection constructor.
      */

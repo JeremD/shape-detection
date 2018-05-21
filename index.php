@@ -34,7 +34,7 @@ session_start();
             <h2>Training section</h2>
             <hr/>
             <form action="." method="post">
-                Set the number of learnin' iterations:
+                Set the number of shape:
                 <p>
                     <input type="number" name="iteration_nb" value="1000">
                 </p>

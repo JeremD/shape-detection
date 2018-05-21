@@ -5,10 +5,12 @@ Créer une application reconnaissant une forme géométrique spécifier via une 
 Nous nous intéressons qu'aux triangles, quadrilatères et pentagones
 
 Entrées
- - nb coté [2 ; 5]
- - nb nombre angles droits
- - nb côtés identiques
- - nb côtés parallèles
+ - nb coté [3 ; 5]
+ - nb angles droits [1 ; 4]
+ - nb côtés identiques [3 ; 5]
+ - nb côtés parallèles [2 ou 4]
+
+Access --> https://shape-detection.herokuapp.com/
 
 Langage non imposé
 
@@ -21,4 +23,3 @@ entre elles :
 - Une base de faits qui représente les connaissances actuelles du système sur un cas précis.
 - Un moteur d’inférences pour appliquer les règles.
 - Une interface avec l’utilisateur.
-
