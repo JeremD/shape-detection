@@ -1,22 +1,23 @@
 body{
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	color: #00a69d;
+	color: #6666FF;
+    background-color: #FFFF66;
 }
 input[type="submit"], input[type="reset"]{
-	color: #4e545b;
+	color: #6666FF;
     font-weight: bold;
-	background-color : #00a69d; 
+	background-color : #FFFF66;
     border-radius: 25px 15px 30px 5px;
     -moz-border-radius: 25px 15px 30px 5px;
     -webkit-border-radius: 25px 15px 30px 5px;
 }
 hr {
-    background-color: purple;
-    color: purple;
+    background-color: #6666FF;
+    color: #6666FF;
     height: 2px;
 }
 h2 {
-    border-left: purple 3px solid;
+    border-left: #6666FF 3px solid;
     margin-bottom: -8px;
     margin-top: 0px;
     padding-left: 5px;
@@ -77,8 +78,8 @@ h3 {
     -webkit-border-radius: 25px 15px 30px 5px;
 }
 #fields .hex-color-picker-wrapper input[type="submit"]{
-	color: #4e545b;
-	background-color : #00a69d; 
+	color: #6666FF;
+	background-color : #FFFF66;
     border-radius: 25px 15px 30px 5px;
     -moz-border-radius: 25px 15px 30px 5px;
     -webkit-border-radius: 25px 15px 30px 5px;

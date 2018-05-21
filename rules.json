@@ -1,0 +1,100 @@
+{
+  "rules": {
+    "triangle": {
+      "premisses": {
+        "sides": 3
+      },
+      "conslusions": {
+        "rules": {
+          "rectangle":
+          {
+            "premisses": {
+              "rightAngleSides": 1
+            },
+            "conclusion": "rectangle"
+          },
+          "isocele":
+          {
+            "premisses": {
+              "identicalSides": 2
+            },
+            "conclusion": "isocele"
+          },
+          "equilatral":
+          {
+            "premisses": {
+              "identicalSides": 3
+            },
+            "conclusion": "equilateral"
+          }
+        }
+
+      }
+    }
+  },
+    "quadrilateral": {
+      "premisses": {
+        "sides": 4
+      },
+      "conslusions": {
+        "rules": {
+          "parallelogram":
+          {
+            "premisses": {
+              "parallelSides": 2,
+              "identicalSides": 2
+            },
+            "conclusion": "parallelogram"
+          },
+          "trapezium":
+          {
+            "premisses": {
+              "parallelSides": 2,
+              "identicalSides": 0
+            },
+            "conclusion": "trapezium"
+          },
+          "diamond":
+          {
+            "premisses": {
+              "parrallelSides": 2,
+              "identicalSides": 4
+            },
+            "conclusion": "diamond"
+          },
+          "rectangle":
+          {
+            "premisses": {
+              "rightAngleSides": 4,
+              "identicalSides": 2
+            },
+            "conclusion": "rectangle"
+          },
+          "square":
+          {
+            "premisses": {
+              "parrallelSides": 4,
+              "identicalSides": 4
+            },
+            "conclusion": "square"
+          }
+        }
+      }
+    },
+    "pentagone": {
+      "premisses": {
+        "sides": 3
+      },
+      "conslusions": {
+        "rules": {
+          "equilateral":
+          {
+            "premisses": {
+              "identicalSides": 5
+            },
+            "conclusion": "equilateral"
+          }
+        }
+      }
+    }
+  }

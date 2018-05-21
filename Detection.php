@@ -20,9 +20,9 @@ class Detection {
         "par"   => "Ceci est un parallélogramme",
         "los"   => "Ceci est un losange",
         "rec"   => "Ceci est un rectangle",
+        "rec"   => "Ceci est un carré",
         "peq"   => "Ceci est un pentagone quelconque",
         "per"   => "Ceci est un pentagone équilatérale",
-        "pe_"   => "Ceci est un pentagone",
         "err"   => "Ceci est une forme incohérente"
 ];
 
