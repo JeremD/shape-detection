@@ -4,9 +4,15 @@
  * Date: 14/03/2018
  */
 
-require_once('Detection.php');
+include_once 'Detection.php';
+include_once 'RulesBase.php';
+include_once 'Rule.php';
+include_once 'FactsBase.php';
+include_once 'Fact.php';
 
 session_start();
+
+new Detection(null, 'data/rules.json');
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +20,7 @@ session_start();
 <head>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.png" type="image/png">
-    <link rel="stylesheet" type="text/css" href="style/perceptron_style.css">
+    <link rel="stylesheet" type="text/css" href="style/expert_style.css">
     <script type='text/javascript' src='https://code.jquery.com/jquery-latest.min.js'></script>
     <script>
         $(document).ready(function() {

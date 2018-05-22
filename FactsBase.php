@@ -6,7 +6,7 @@
  * Time: 19:37
  */
 
-class RulesBase
+class FactsBase
 {
 
 }

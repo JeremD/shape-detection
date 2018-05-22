@@ -49,8 +49,7 @@
           "trapezium":
           {
             "premisses": {
-              "parallelSides": 2,
-              "identicalSides": 0
+              "parallelSides": 2
             },
             "conclusion": "trapezium"
           },

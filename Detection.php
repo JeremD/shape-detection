@@ -4,12 +4,14 @@
  * Date: 14/03/2018
  */
 
+include_once 'JSONParser.php';
+
 class Detection {
     private $rightAnglesNb;
     private $parallelSidesNb;
     private $sidesNb;
     private $identicalSidesNb;
-    private const SHAPES = [
+    private static $SHAPES = [
         "trq"   => "Ceci est un triangle quelconque",
         "trr"   => "Ceci est un triangle rectangle",
         "tri"   => "Ceci est un triangle isocèle",
@@ -20,19 +22,21 @@ class Detection {
         "par"   => "Ceci est un parallélogramme",
         "los"   => "Ceci est un losange",
         "rec"   => "Ceci est un rectangle",
-        "rec"   => "Ceci est un carré",
+        "car"   => "Ceci est un carré",
         "peq"   => "Ceci est un pentagone quelconque",
         "per"   => "Ceci est un pentagone équilatérale",
         "err"   => "Ceci est une forme incohérente"
-];
-
-//Changer directions (dessin graph)
-
+    ];
 
     /**
      * Detection constructor.
      */
-    public function __construct($inputs) {
+    public function __construct($inputs, $url) {
+        #TODO
+        $json = file_get_contents($url);
+
+        $jsonParser = new JSONParser($json);
+        #TODO
         if(is_null($inputs) || sizeof($inputs) === 0) {
             throw new Exception("The size of the input array was wrongly initialized!");
         } else {
