@@ -1,78 +1,68 @@
 {
   "rules": {
-    "triangle": {
+    "isTriangle": {
       "premisses": {
         "sides": 3
       },
-      "conslusions": {
-        "rules": {
-          "rectangle":
-          {
+      "conclusion": {
+        "triangle": {
+          "isRectangle": {
             "premisses": {
               "rightAngleSides": 1
             },
             "conclusion": "rectangle"
           },
-          "isocele":
-          {
+          "isIsocele": {
             "premisses": {
               "identicalSides": 2
             },
             "conclusion": "isocele"
           },
-          "equilatral":
-          {
+          "isEquilatral": {
             "premisses": {
               "identicalSides": 3
             },
             "conclusion": "equilateral"
           }
         }
-
       }
-    }
-  },
-    "quadrilateral": {
+    },
+    "isQuadrilateral": {
       "premisses": {
         "sides": 4
       },
-      "conslusions": {
-        "rules": {
-          "parallelogram":
-          {
+      "conclusion": {
+        "quadrilateral": {
+          "isParallelogram": {
             "premisses": {
               "parallelSides": 2,
               "identicalSides": 2
             },
             "conclusion": "parallelogram"
           },
-          "trapezium":
-          {
+          "isTrapezium": {
             "premisses": {
               "parallelSides": 2
             },
             "conclusion": "trapezium"
           },
-          "diamond":
-          {
+          "isDiamond": {
             "premisses": {
-              "parrallelSides": 2,
+              "parallelSides": 2,
               "identicalSides": 4
             },
             "conclusion": "diamond"
           },
-          "rectangle":
-          {
+          "isRectangle": {
             "premisses": {
               "rightAngleSides": 4,
               "identicalSides": 2
             },
             "conclusion": "rectangle"
           },
-          "square":
-          {
+          "isSquare": {
             "premisses": {
-              "parrallelSides": 4,
+              "parallelSides": 4,
               "identicalSides": 4
             },
             "conclusion": "square"
@@ -80,14 +70,13 @@
         }
       }
     },
-    "pentagone": {
+    "isPentagone": {
       "premisses": {
         "sides": 3
       },
-      "conslusions": {
-        "rules": {
-          "equilateral":
-          {
+      "conclusion": {
+        "pentagone": {
+          "isEquilateral": {
             "premisses": {
               "identicalSides": 5
             },
@@ -97,3 +86,4 @@
       }
     }
   }
+}

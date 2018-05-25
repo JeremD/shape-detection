@@ -8,24 +8,19 @@
 
 include_once 'Rule.php';
 
-class RulesBase implements JSONTraversable
+class RulesBase
 {
     private $rules = array();
 
-    public function __construct($jsonRules)
-    {
-        foreach($jsonRules as $jsonRule) {
-            array_push($this->rules, new Rule($jsonRule));
-        }
+    public function __construct() {
+
     }
 
-    function getIterator()
-    {
-        return new ArrayIterator(($this->json));
+    public function makeRule($ruleName, $rulePremisses, $ruleConclusion) {
+        array_push($this->rules, new Rule($ruleName, $rulePremisses, $ruleConclusion));
     }
 
-    function count()
-    {
-        return count($this->json);
+    public function getRules() {
+        return $this->rules;
     }
 }

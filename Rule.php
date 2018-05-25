@@ -8,15 +8,17 @@
 
 class Rule
 {
+    private $name = '';
     private $premisses = array();
     private $conclusion = '';
 
-    public function __construct($jsonRule)
+    public function __construct($ruleName, $rulePremisses, $ruleConclusion)
     {
-        #TODO traiter la JSON Rule pour les décomposer en prémisses + conclusion
-//        foreach($premisses as $premisse) {
-//            array_push($this->premisses,$premisse);
-//        }
-//        $this->conclusion = $conclusion;
+        $this->name = $ruleName;
+        $this->premisses[key($rulePremisses)] = array();
+        foreach($rulePremisses as $premisse) {
+            array_push($this->premisses[key($rulePremisses)], $premisse);
+        }
+        $this->conclusion = $ruleConclusion;
     }
 }

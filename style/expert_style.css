@@ -4,7 +4,8 @@ body{
     background-color: #FFFF66;
 }
 input[type="submit"], input[type="reset"]{
-	color: #6666FF;
+	color: #30092f;
+    font-size: 12px;
     font-weight: bold;
 	background-color : #FFFF66;
     border-radius: 25px 15px 30px 5px;
@@ -12,21 +13,19 @@ input[type="submit"], input[type="reset"]{
     -webkit-border-radius: 25px 15px 30px 5px;
 }
 hr {
-    background-color: #6666FF;
-    color: #6666FF;
+    background-color: #30092f;
+    /*color: #30092f;*/
     height: 2px;
 }
-h2 {
-    border-left: #6666FF 3px solid;
-    margin-bottom: -8px;
-    margin-top: 0px;
-    padding-left: 5px;
+h1 {
+    font-size: 28px;
 }
-h3 {
-    border-left: #00a69d 1.5px solid;
+h2 {
+    border-left: #30092f 3px solid;
+    margin-bottom: -8px;
     padding-left: 5px;
-    margin-left: 10px;
-    color: purple;
+    margin-top: 0px;
+    font-size: 20px;
 }
 .smaller {
     font-family: cursive;
@@ -92,36 +91,33 @@ h3 {
     appearance:none;
 }
 
-.zero{background-image:url(../img/00.png);}
-.one{background-image:url(../img/01.png);}
-.two{background-image:url(../img/02.png);}
-.three{background-image:url(../img/03.png);}
-.four{background-image:url(../img/04.png);}
-.five{background-image:url(../img/05.png);}
-.six{background-image:url(../img/06.png);}
-.seven{background-image:url(../img/07.png);}
+.zero{background-image:url(../img/inputs/00.png); background-position: center; background-size: 40px 55px}
+.one{background-image:url(../img/inputs/01.png); background-position: center; background-size: 40px 55px}
+.two{background-image:url(../img/inputs/02.png); background-position: center; background-size: 40px 55px}
+.three{background-image:url(../img/inputs/03.png); background-position: center; background-size: 40px 55px}
+.four{background-image:url(../img/inputs/04.png); background-position: center; background-size: 40px 55px}
+.five{background-image:url(../img/inputs/05.png); background-position: center; background-size: 40px 55px}
 
-.cc-selector input:active +.drinkcard-cc{opacity: .9;}
-.cc-selector input:checked +.drinkcard-cc{
-    -webkit-filter: none;
-    -moz-filter: none;
-    filter: none;
-}
 .drinkcard-cc{
     cursor:pointer;
-    background-size:contain;
     background-repeat:no-repeat;
     display:inline-block;
-    width:100px;height:70px;
+    width:100px;
+    height:60px;
     -webkit-transition: all 100ms ease-in;
     -moz-transition: all 100ms ease-in;
     transition: all 100ms ease-in;
-    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
-    -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
-    filter: brightness(1.8) grayscale(1) opacity(.7);
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.6);
+    -moz-filter: brightness(1.8) grayscale(1) opacity(.6);
+    filter: brightness(1.8) grayscale(1) opacity(.6);
 }
 .drinkcard-cc:hover{
-    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
-    -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
-    filter: brightness(1.2) grayscale(.5) opacity(.9);
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.8);
+    -moz-filter: brightness(1.2) grayscale(.5) opacity(.8);
+    filter: brightness(1.2) grayscale(.5) opacity(.8);
+}
+.selected {
+    -webkit-filter: none;
+    -moz-filter: none;
+    filter: none;
 }
