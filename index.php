@@ -165,7 +165,7 @@ if (!empty($_POST)) {
               <h4 class="modal-title">Modal title</h4>
               </div>
               <div class="modal-body">
-              <img class="img-responsive" src="https://wiki.dolibarr.org/upload/6/66/Art.png" alt="image" />
+              <img class="img-responsive" src="img/shapes/tre.png" alt="image" />
               This is the text.
               </div>
               <div class="modal-footer">
