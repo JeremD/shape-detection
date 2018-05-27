@@ -151,7 +151,7 @@ if (!empty($_POST)) {
                 <input type="hidden" id="identical-sides-number" name="identical-sides-number" value="0">
                 <p>
                     <input type="reset" value="Reset">
-                    <input type="submit" value="Detect!">
+                    <input type="submit" class="btn btn-primary btn-lg" value="Detect!">
                 </p>
             </form>
 
