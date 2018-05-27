@@ -159,7 +159,7 @@ session_start();
                     <a data-toggle="modal" href="#result" class="btn btn-primary btn-lg">Detect!</a>
 
                     <!-- Modal -->
-                  <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal fade" id="result" role="dialog">
                     <div class="modal-dialog modal-sm">
                       <div class="modal-content">
                         <div class="modal-header">
