@@ -157,10 +157,10 @@ if (!empty($_POST)) {
 
               <!-- Modif -->
               <!-- Button trigger modal -->
-              <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Detect!</a>
+              <a data-toggle="modal" href="#result" class="btn btn-primary btn-lg">Detect!</a>
 
               <!-- Modal -->
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal fade" id="result" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog">
               <div class="modal-content">
               <div class="modal-header">
