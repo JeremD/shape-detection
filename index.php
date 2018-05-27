@@ -12,16 +12,16 @@ include_once 'Fact.php';
 
 session_start();
 
-if (!empty($_POST)) {
-    new Detection(
-        array(
-            $_POST['sides-number'],
-            $_POST['parallel-sides-number'],
-            $_POST['right-angles-number'],
-            $_POST['identical-sides-number']),
-        'data/rules.json'
-    );
-}
+// if (!empty($_POST)) {
+//     new Detection(
+//         array(
+//             $_POST['sides-number'],
+//             $_POST['parallel-sides-number'],
+//             $_POST['right-angles-number'],
+//             $_POST['identical-sides-number']),
+//         'data/rules.json'
+//     );
+// }
 
 ?>
 
