@@ -29,6 +29,10 @@ if(!empty($_POST)) {
     <link rel="icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="style/expert_style.css">
     <script type='text/javascript' src='https://code.jquery.com/jquery-latest.min.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
     <script>
         $(function() {
             $('.init-value').addClass('selected');
@@ -150,7 +154,7 @@ if(!empty($_POST)) {
                     <input type="reset" value="Reset">
                     <input type="submit" value="Detect!">
                 </p>
-                
+
                 <!-- Modif -->
                 <!-- Button trigger modal -->
                 <a data-toggle="modal" href="#result" class="btn btn-primary btn-lg">Detect!</a>
