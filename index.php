@@ -150,6 +150,28 @@ if(!empty($_POST)) {
                     <input type="reset" value="Reset">
                     <input type="submit" value="Detect!">
                 </p>
+                
+                <!-- Modif -->
+                <!-- Button trigger modal -->
+                <a data-toggle="modal" href="#result" class="btn btn-primary btn-lg">Detect!</a>
+
+                <!-- Modal -->
+              <div class="modal fade" id="result" role="dialog">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Result</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>This is a small modal.</p>
+                      <img class="img-responsive" src="https://raw.githubusercontent.com/Runolas/shape-detection/master/img/shapes/peq.jpeg" alt="image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modif -->
+
             </form>
         </div>
     </div>
