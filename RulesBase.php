@@ -12,9 +12,7 @@ class RulesBase
 {
     private $rules = array();
 
-    public function __construct() {
-
-    }
+    public function __construct() {}
 
     public function makeRule($ruleName, $rulePremisses, $ruleConclusion) {
         array_push($this->rules, new Rule($ruleName, $rulePremisses, $ruleConclusion));
