@@ -5,20 +5,19 @@
  */
 
 include_once 'Detection.php';
-include_once 'RulesBase.php';
-include_once 'Rule.php';
-include_once 'FactsBase.php';
-include_once 'Fact.php';
 
 session_start();
 
 if(!empty($_POST)) {
-    new Detection(array(
+    try {
+        new Detection(array(
             $_POST['sides-number'],
             $_POST['parallel-sides-number'],
             $_POST['right-angles-number'],
             $_POST['identical-sides-number']),
-        'data/rules.json');
+            'data/rules.json');
+    } catch (Exception $e) {
+    }
 }
 
 ?>
@@ -70,6 +69,11 @@ if(!empty($_POST)) {
     <title>Artificial Intelligence project: Shape Detection (by Jerem & momomo)</title>
 </head>
 <body>
+<?php
+    if(!empty($e)) {
+        echo $e->getMessage();
+    }
+?>
     <div>
         <h1>Artificial Intelligence project<span class="smaller"> a system expert application</span></h1>
         <hr/>
@@ -95,8 +99,6 @@ if(!empty($_POST)) {
                 <label class="drinkcard-cc zero selected" for="zero"></label>
                 <input id="two" type="radio" name="input" value="2"/>
                 <label class="drinkcard-cc two" for="two"></label>
-                <input id="four" type="radio" name="input" value="4"/>
-                <label class="drinkcard-cc four" for="four"></label>
             </div>
         </div>
         <hr/>
@@ -111,8 +113,6 @@ if(!empty($_POST)) {
                     <label class="drinkcard-cc one" for="one"></label>
                     <input id="two" type="radio" name="input" value="2"/>
                     <label class="drinkcard-cc two" for="two"></label>
-                    <input id="three" type="radio" name="input" value="3"/>
-                    <label class="drinkcard-cc three" for="three"></label>
                     <input id="four" type="radio" name="input" value="4"/>
                     <label class="drinkcard-cc four" for="four"></label>
                 </div>
@@ -126,6 +126,8 @@ if(!empty($_POST)) {
                 <div class="cc-selector identical-sides-number-form" id="identical-sides-number-form">
                     <input id="zero" type="radio" name="input" value="0"/>
                     <label class="drinkcard-cc zero selected" for="zero"></label>
+                    <input id="two" type="radio" name="input" value="2"/>
+                    <label class="drinkcard-cc two" for="two"></label>
                     <input id="three" type="radio" name="input" value="3"/>
                     <label class="drinkcard-cc three" for="three"></label>
                     <input id="four" type="radio" name="input" value="4"/>

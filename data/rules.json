@@ -4,86 +4,94 @@
       "premisses": {
         "sides": 3
       },
-      "conclusion": {
-        "triangle": {
-          "isRectangle": {
-            "premisses": {
-              "rightAngleSides": 1
-            },
-            "conclusion": "rectangle"
-          },
-          "isIsocele": {
-            "premisses": {
-              "identicalSides": 2
-            },
-            "conclusion": "isocele"
-          },
-          "isEquilatral": {
-            "premisses": {
-              "identicalSides": 3
-            },
-            "conclusion": "equilateral"
-          }
-        }
-      }
+      "conclusion": "triangle"
     },
+    "isRightAngledTriangle": {
+      "premisses": {
+        "triangle": true,
+        "rightAngles": 1
+      },
+      "conclusion": "right-angled_triangle"
+    },
+    "isIsoscelesTriangle": {
+      "premisses": {
+        "triangle": true,
+        "identicalSides": 2
+      },
+      "conclusion": "isosceles_triangle"
+    },
+    "isRightAngledIsoscelesTriangle": {
+      "premisses": {
+        "right-angled_triangle": true,
+        "identicalSides": 2
+      },
+      "conclusion": "isosceles_right-angled_triangle"
+    },
+    "isEquilateralTriangle": {
+      "premisses": {
+        "triangle": true,
+        "identicalSides": 3
+      },
+      "conclusion": "equilateral"
+      },
     "isQuadrilateral": {
       "premisses": {
         "sides": 4
       },
-      "conclusion": {
-        "quadrilateral": {
-          "isParallelogram": {
-            "premisses": {
-              "parallelSides": 2,
-              "identicalSides": 2
-            },
-            "conclusion": "parallelogram"
-          },
-          "isTrapezium": {
-            "premisses": {
-              "parallelSides": 2
-            },
-            "conclusion": "trapezium"
-          },
-          "isDiamond": {
-            "premisses": {
-              "parallelSides": 2,
-              "identicalSides": 4
-            },
-            "conclusion": "diamond"
-          },
-          "isRectangle": {
-            "premisses": {
-              "rightAngleSides": 4,
-              "identicalSides": 2
-            },
-            "conclusion": "rectangle"
-          },
-          "isSquare": {
-            "premisses": {
-              "parallelSides": 4,
-              "identicalSides": 4
-            },
-            "conclusion": "square"
-          }
-        }
-      }
+      "conclusion": "quadrilateral"
+    },
+    "isTrapezium": {
+      "premisses": {
+        "quadrilateral": true,
+        "parallelSides": 2
+      },
+      "conclusion": "trapezium"
+    },
+    "isParallelogram": {
+      "premisses": {
+        "quadrilateral": true,
+        "parallelSides": 2,
+        "identicalSides": 2
+      },
+      "conclusion": "parallelogram"
+    },
+    "isDiamond": {
+      "premisses": {
+        "quadrilateral": true,
+        "parallelSides": 2,
+        "identicalSides": 4
+      },
+      "conclusion": "diamond"
+    },
+    "isRectangle": {
+      "premisses": {
+        "quadrilateral": true,
+        "parallelSides": 2,
+        "rightAngles": 4
+      },
+      "conclusion": "rectangle"
+    },
+    "isSquare": {
+      "premisses": {
+        "quadrilateral": true,
+        "identicalSides": 4,
+        "rightAngles": 4,
+        "parallelSides": 2
+      },
+      "conclusion": "square"
     },
     "isPentagone": {
       "premisses": {
-        "sides": 3
+        "sides": 5
       },
-      "conclusion": {
-        "pentagone": {
-          "isEquilateral": {
-            "premisses": {
-              "identicalSides": 5
-            },
-            "conclusion": "equilateral"
-          }
-        }
-      }
+      "conclusion": "pentagone"
+    },
+    "isEquilateralPentagone": {
+      "premisses": {
+        "pentagone": true,
+        "identicalSides": 5
+      },
+      "conclusion": "equilateral_pentagone"
     }
   }
 }

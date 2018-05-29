@@ -15,10 +15,21 @@ class Rule
     public function __construct($ruleName, $rulePremisses, $ruleConclusion)
     {
         $this->name = $ruleName;
-        $this->premisses[key($rulePremisses)] = array();
-        foreach($rulePremisses as $premisse) {
-            array_push($this->premisses[key($rulePremisses)], $premisse);
+        foreach($rulePremisses as $keyPremisses => $premisse) {
+            $this->premisses[$keyPremisses] = $premisse;
         }
         $this->conclusion = $ruleConclusion;
+    }
+
+    public function getName() {
+        return $this->name;
+    }
+
+    public function getPremisses() {
+        return $this->premisses;
+    }
+
+    public function getConclusion() {
+        return $this->conclusion;
     }
 }

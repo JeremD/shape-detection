@@ -22,10 +22,7 @@ class JSONParser {
         $json = json_decode($json, true);
 
         foreach($json['rules'] as $ruleName => $ruleContent) {
-            $ruleBase->makeRule($ruleName, $ruleContent['premisses'], key($ruleContent['conclusion']));
-            foreach($ruleContent['conclusion'][key($ruleContent['conclusion'])] as $subRuleName => $subRuleContent) {
-                $ruleBase->makeRule($subRuleName, $subRuleContent['premisses'], key($subRuleContent['conclusion']));
-            }
+            $ruleBase->makeRule($ruleName, $ruleContent['premisses'], $ruleContent['conclusion']);
         }
     }
 }
