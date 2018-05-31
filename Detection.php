@@ -10,11 +10,6 @@ include_once 'FactsBase.php';
 include_once 'Rule.php';
 include_once 'Fact.php';
 
-#TODO
-// [DONE] populate FactsBase & Base
-// [DONE] compare RulesBase & FactsBase
-// output result (pop-in)
-
 class Detection {
     private $rulesBase;
     private $factsBase;
@@ -80,7 +75,7 @@ class Detection {
         ],
         'err'                                => [
             'text'  => "This is non-sens...!",
-            'img'   => "img/shapes/err.jpg"
+            'img'   => "img/err.jpg"
         ]
     ];
 
