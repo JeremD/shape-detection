@@ -2,6 +2,7 @@ body{
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	color: #6666FF;
     background-color: #FFFF66;
+    padding: 10px;
 }
 input[type="submit"], input[type="reset"]{
 	color: #30092f;
@@ -107,17 +108,35 @@ h2 {
     -webkit-transition: all 100ms ease-in;
     -moz-transition: all 100ms ease-in;
     transition: all 100ms ease-in;
-    -webkit-filter: brightness(1.8) grayscale(1) opacity(.6);
-    -moz-filter: brightness(1.8) grayscale(1) opacity(.6);
-    filter: brightness(1.8) grayscale(1) opacity(.6);
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.5);
+    -moz-filter: brightness(1.8) grayscale(1) opacity(.5);
+    filter: brightness(1.8) grayscale(1) opacity(.5);
 }
 .drinkcard-cc:hover{
-    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.8);
-    -moz-filter: brightness(1.2) grayscale(.5) opacity(.8);
-    filter: brightness(1.2) grayscale(.5) opacity(.8);
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.7);
+    -moz-filter: brightness(1.2) grayscale(.5) opacity(.7);
+    filter: brightness(1.2) grayscale(.5) opacity(.7);
 }
 .selected {
     -webkit-filter: none;
     -moz-filter: none;
     filter: none;
 }
+<<<<<<< HEAD
+=======
+#img-result {
+    margin: auto;
+    display: block;
+}
+#detect {
+    color: #FFFF66;
+    background-color: #30092f;
+}
+#detect-hover {
+    color: #30092f;
+    background-color: #FFFF66;
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.7);
+    -moz-filter: brightness(1.2) grayscale(.5) opacity(.7);
+    filter: brightness(1.2) grayscale(.5) opacity(.7);
+}
+>>>>>>> 2c2eccbb015fe83a3829b00a3c36fea7f9dc5d0b

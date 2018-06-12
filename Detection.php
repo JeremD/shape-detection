@@ -10,11 +10,6 @@ include_once 'FactsBase.php';
 include_once 'Rule.php';
 include_once 'Fact.php';
 
-#TODO
-// [DONE] populate FactsBase & Base
-// [DONE] compare RulesBase & FactsBase
-// output result (pop-in)
-
 class Detection {
     private $rulesBase;
     private $factsBase;
@@ -26,21 +21,62 @@ class Detection {
         'identicalSides' => null
     ];
     private $RESPONSE_MESSAGES = [
-        'triangle'                          => "This is just a triangle",
-        "right-angled_triangle"             => "This is a right-angle triangle",
-        "isosceles_triangle"                => "This is a isosceles triangle",
-        "isosceles_right-angled_triangle"   => "This is right-angled isosceles triangle",
-        "equilateral"                       => "This is an equilatéral rectangle",
-        'quadrilateral'                     => "This is just a quadrilateral",
-        'trapezium'                         => "This is a trapezium",
-        'parallelogram'                     => "This is a parallelogram",
-        'quadrilateral'                     => "This is just a quadrilateral",
-        'diamond'                           => "This is a diamond",
-        'rectangle'                         => "This is a rectangle",
-        'square'                            => "This is a square",
-        'pentagone'                         => "This is just a pentagone",
-        'equilateral_pentagone'             => "This is an equilateral pentagone",
-        'err'                               => "This is non-sens...!"
+        'triangle'                          => [
+            'text'  => "This is just a triangle",
+            'img'   => "img/shapes/trq.jpg"
+        ],
+        'right-angled_triangle'             => [
+            'text'  => "This is a right-angled triangle",
+            'img'   => "img/shapes/trr.jpg"
+        ],
+        'isosceles_triangle'                => [
+            'text'  => "This is a isosceles triangle",
+            'img'   => "img/shapes/tri.jpg"
+        ],
+        'isosceles_right-angled_triangle'   => [
+            'text'  => "This is right-angled isosceles triangle",
+            'img'   => "img/shapes/trri.jpg"
+        ],
+        'equilateral'                       => [
+            'text'  => "This is an equilateral rectangle",
+            'img'   => "img/shapes/tre.jpg"
+        ],
+        'quadrilateral'                     => [
+            'text'  => "This is just a quadrilateral",
+            'img'   => "img/shapes/quq.jpg"
+        ],
+        'trapezium'                          => [
+            'text'  => "This is a trapezium",
+            'img'   => "img/shapes/tra.jpg"
+        ],
+        'parallelogram'                      => [
+            'text'  => "This is a parallelogram",
+            'img'   => "img/shapes/par.jpg"
+        ],
+        'diamond'                            => [
+            'text'  => "This is a diamond",
+            'img'   => "img/shapes/los.jpg"
+        ],
+        'rectangle'                          => [
+            'text'  => "This is a rectangle",
+            'img'   => "img/shapes/rec.jpg"
+        ],
+        'square'                             => [
+            'text'  => "This is a square",
+            'img'   => "img/shapes/car.jpg"
+        ],
+        'pentagone'                          => [
+            'text'  => "This is just a pentagone",
+            'img'   => "img/shapes/peq.jpg"
+        ],
+        'equilateral_pentagone'              => [
+            'text'  => "This is an equilateral pentagone",
+            'img'   => "img/shapes/pee.jpg"
+        ],
+        'err'                                => [
+            'text'  => "This is non-sens...!",
+            'img'   => "img/err.jpg"
+        ]
     ];
 
     public function __construct($inputs, $url) {
@@ -55,13 +91,6 @@ class Detection {
         }
 
         $this->factsBase = new FactsBase($this->inputs);
-
-        $conclusionCode = $this->detect();
-        $message = $this->getMessageDetection($conclusionCode);
-
-        echo '<pre>';
-        var_dump($message);
-        echo '</pre>';
     }
 
     private function setInputs($inputs) {
