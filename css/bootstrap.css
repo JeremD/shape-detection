@@ -5417,6 +5417,7 @@ button.close {
   flex: 1 1 auto;
   padding: 1rem;
   max-height: 800px;
+  max-width: 800px;
 }
 
 .modal-footer {
